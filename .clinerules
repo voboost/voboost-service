@@ -1,0 +1,88 @@
+# Voboost Service - Project Intelligence
+
+## Global Rules (CRITICAL)
+- This project follows ALL common rules from ../voboost-codestyle/.clinerules
+- The rules below are PROJECT-SPECIFIC additions to the global rules
+- NEVER duplicate global rules here - they are inherited automatically
+
+## Project-Specific Patterns
+
+### Application Architecture
+- Android background service for Voyah vehicles (Free, Dreamer models)
+- Integration with voboost-config library for configuration reading
+- Vehicle system integration capabilities
+- Android 9 and Android 11 compatibility only
+
+### Technology Stack
+- Kotlin/Android for service development
+- Android Services with foreground operation
+- voboost-config library integration for configuration handling
+- Vehicle system API integration for configuration application
+- Android Architecture Components for service management
+
+### Service Patterns
+- Android foreground service for reliable background operation
+- Configuration file monitoring using Android FileObserver
+- Vehicle system configuration application
+- Service binding for communication with main app
+- Android system integration (notifications, permissions, work manager)
+
+### Integration Approach
+- voboost-config library as dependency for configuration operations
+- Result pattern for consistent error handling
+- Vehicle system API integration for configuration application
+- Service lifecycle management with Android components
+- Integration with Voyah vehicle software stack
+
+## Critical Implementation Details
+
+### Configuration Application
+- Read configuration from voboost-config files
+- Apply vehicle-specific settings based on configuration
+- Handle configuration validation and error recovery
+- Support for Voyah Free and Dreamer model differences
+- Rollback capabilities for failed vehicle configurations
+
+### Android Service Management
+- Proper foreground service implementation
+- Service status monitoring and health checks
+- Automatic restart on failure using Android mechanisms
+- Configuration reload without service restart
+- Android system integration (startup, shutdown, logging)
+
+### Vehicle System Integration
+- Voyah-specific vehicle system implementation
+- Vehicle system permission handling
+- Configuration backup and restore for vehicle state
+- Vehicle system state monitoring
+- Integration with Voyah vehicle APIs and software stack
+
+### Error Handling
+- Graceful handling of invalid configurations
+- Vehicle system-level error recovery
+- Service failure handling and recovery using Android patterns
+- Configuration rollback on vehicle system errors
+- Comprehensive logging for vehicle diagnostics
+
+## Development Workflow (Project-Specific)
+- Service should operate reliably as Android background service
+- All changes should maintain automotive-grade reliability standards
+- Integration with voboost-config library should be seamless
+- Android 9 and 11 compatibility must be maintained
+- Vehicle integration should follow Voyah platform standards
+
+## Project Status
+- INITIAL SETUP PHASE
+- Android service architecture planning in progress
+- Vehicle integration patterns to be established
+- Voyah-specific system integration to be developed
+- Memory bank documentation initialized
+
+## Key Success Factors
+- Reliable Android background service operation
+- Seamless integration with voboost-config library
+- Stable operation on Android 9 and 11
+- Robust vehicle configuration application and monitoring
+- Vehicle system integration capabilities
+- Professional automotive-grade service management and monitoring
+- Model-specific support for Voyah Free and Dreamer vehicles

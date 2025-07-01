@@ -1,0 +1,13 @@
+<resources>
+    <string name="service_name">Voboost Configuration Service</string>
+    <string name="service_description">Background service for applying vehicle configuration settings</string>
+    <string name="notification_channel_name">Voboost Service</string>
+    <string name="notification_channel_description">Notifications from Voboost configuration service</string>
+    <string name="service_running_title">Voboost Service Running</string>
+    <string name="service_running_text">Monitoring vehicle configuration changes</string>
+    <string name="configuration_applied">Configuration applied successfully</string>
+    <string name="configuration_failed">Failed to apply configuration</string>
+    <string name="vehicle_not_detected">Vehicle not detected</string>
+    <string name="service_started">Service started</string>
+    <string name="service_stopped">Service stopped</string>
+</resources>
